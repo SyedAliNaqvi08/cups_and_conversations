@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 30 30% 98%;
+  --foreground: 20 10% 15%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 20 10% 15%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 10% 15%;
+
+  --primary: 0 60% 70%;
+  --primary-foreground: 30 10% 98%;
+
+  --secondary: 20 20% 95%;
+  --secondary-foreground: 25 30% 35%;
+
+  --muted: 20 10% 96%;
+  --muted-foreground: 20 10% 40%;
+
+  --accent: 25 20% 90%;
+  --accent-foreground: 25 30% 35%;
+
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 30 10% 98%;
+
+  --border: 20 15% 90%;
+  --input: 20 15% 90%;
+  --ring: 25 30% 40%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 20 30% 10%;
+  --foreground: 30 10% 98%;
+
+  --card: 20 30% 12%;
+  --card-foreground: 30 10% 98%;
+
+  --popover: 20 30% 12%;
+  --popover-foreground: 30 10% 98%;
+
+  --primary: 25 30% 50%;
+  --primary-foreground: 20 10% 10%;
+
+  --secondary: 20 20% 15%;
+  --secondary-foreground: 30 10% 98%;
+
+  --muted: 20 20% 20%;
+  --muted-foreground: 20 10% 60%;
+
+  --accent: 20 20% 20%;
+  --accent-foreground: 30 10% 98%;
+
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 30 10% 98%;
+
+  --border: 20 20% 20%;
+  --input: 20 20% 20%;
+  --ring: 25 30% 50%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer utilities {
+  .masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 10px;
+    grid-gap: 1rem;
+  }
+
+  .masonry-item {
+    grid-row-end: span var(--span);
+  }
+}
+
+.gallery-item {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.testimonial-card {
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.process-step {
+  position: relative;
+}
+
+.process-step::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 30px;
+  height: 2px;
+  background-color: hsl(var(--primary));
+  transform: translateY(-50%);
+}
+
+.process-step:last-child::after {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .process-step::after {
+    top: auto;
+    right: 50%;
+    bottom: -15px;
+    width: 2px;
+    height: 30px;
+    transform: translateX(50%);
+  }
+}
