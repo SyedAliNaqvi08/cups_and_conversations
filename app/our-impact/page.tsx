@@ -111,19 +111,19 @@ export default function OurImpactPage() {
             <h2 className="text-3xl font-bold mb-8 text-center">Our Impact So Far</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <p className="text-4xl font-bold mb-2">1,000+</p>
+                <p className="text-4xl font-bold mb-2">--</p>
                 <p className="text-lg">Girls Supported</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-bold mb-2">50+</p>
+                <p className="text-4xl font-bold mb-2">--</p>
                 <p className="text-lg">Schools Reached</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-bold mb-2">5,000+</p>
+                <p className="text-4xl font-bold mb-2">--</p>
                 <p className="text-lg">Sanitary Kits Distributed</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-bold mb-2">100+</p>
+                <p className="text-4xl font-bold mb-2">--</p>
                 <p className="text-lg">Educational Workshops</p>
               </div>
             </div>

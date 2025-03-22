@@ -67,18 +67,17 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white font-playfair">Hours</h3>
             <ul className="space-y-2 font-lora">
-              <li>Monday - Friday: 7am - 8pm</li>
-              <li>Saturday: 8am - 9pm</li>
-              <li>Sunday: 8am - 7pm</li>
+              <li>Monday - Friday: 12am - 11pm</li>
+              <li>Weekend: 12pm - 12am</li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white font-playfair">Contact</h3>
             <address className="not-italic font-lora">
-              <p>123 Coffee Lane</p>
-              <p>Brewville, CA 90210</p>
-              <p className="mt-2">(555) 123-4567</p>
-              <p>hello@brewhaven.com</p>
+              <p>Lahore</p>
+              <p>Punjab, Pakistan</p>
+              <p className="mt-2">(334) 123-4567</p>
+              <p>hello@cupsnconvos.com</p>
             </address>
           </div>
         </div>

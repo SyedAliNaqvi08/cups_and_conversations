@@ -23,12 +23,12 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center">
             <Image src="/white_logo.png" alt="Cups & Conversations Logo" width={100} height={100} />
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Cups & Conversations</h1></div>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl">
+          <p className="text-lg md:text-2xl text-white/90 mb-8 max-w-2xl">
             Espresso yourself—one sip, one story
           </p>
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+          <Link href="/menu" className="bg-primary hover:bg-primary/90 text-white p-2 rounded-md">
             Order Online
-          </Button>
+          </Link>
         </div>
       </section>
 
@@ -101,8 +101,8 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center text-center">
               <Clock className="h-10 w-10 text-primary mb-4" />
               <h3 className="text-xl font-semibold text-primary mb-2">Hours</h3>
-              <p className="text-primary/80">Monday - Friday: 7am - 8pm</p>
-              <p className="text-primary/80">Weekends: 8am - 9pm</p>
+              <p className="text-primary/80">Monday - Friday: 12pm - 11pm</p>
+              <p className="text-primary/80">Weekends: 12pm - 12am</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center text-center">
               <Phone className="h-10 w-10 text-primary mb-4" />

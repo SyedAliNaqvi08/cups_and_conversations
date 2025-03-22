@@ -18,12 +18,12 @@ export default function ContactPage() {
     message: "",
   })
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault()
     // In a real application, you would handle form submission here
     console.log("Form submitted:", formData)
@@ -152,8 +152,8 @@ export default function ContactPage() {
                 <MapPin className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-primary mb-1">Address</h3>
-                  <p className="text-primary">123 Hope Street</p>
-                  <p className="text-primary">Unity City, CA 90210</p>
+                  <p className="text-primary">Lahore</p>
+                  <p className="text-primary">Punjab, Pakistan</p>
                 </div>
               </div>
 
@@ -161,7 +161,7 @@ export default function ContactPage() {
                 <Phone className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-primary mb-1">Phone</h3>
-                  <p className="text-primary">(555) 987-6543</p>
+                  <p className="text-primary">(334) 987-6543</p>
                 </div>
               </div>
 
@@ -177,9 +177,8 @@ export default function ContactPage() {
                 <Clock className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-primary mb-1">Hours</h3>
-                  <p className="text-primary">Monday - Friday: 9am - 6pm</p>
-                  <p className="text-primary">Saturday: 10am - 4pm</p>
-                  <p className="text-primary">Sunday: Closed</p>
+                  <p className="text-primary">Monday - Friday: 12pm - 11pm</p>
+                  <p className="text-primary">Weekend: 12pm - 12am </p>
                 </div>
               </div>
             </div>

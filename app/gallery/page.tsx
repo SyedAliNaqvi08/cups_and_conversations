@@ -23,20 +23,6 @@ export default function GalleryPage() {
 
   const galleryImages = [
     {
-      id: 1,
-      src: "/coffee-aesthetic.jpg?height=600&width=800&text=Coffee Shop Interior",
-      alt: "Coffee shop interior",
-      category: "interior",
-      height: 2,
-    },
-    {
-      id: 2,
-      src: "/coffee-machine.jpg?height=600&width=800&text=Barista at Work",
-      alt: "Barista preparing coffee",
-      category: "people",
-      height: 3,
-    },
-    {
       id: 3,
       src: "/cafe_machine.jpg?height=600&width=800&text=Latte Art",
       alt: "Beautiful latte art",
@@ -58,24 +44,10 @@ export default function GalleryPage() {
       height: 2,
     },
     {
-      id: 6,
-      src: "/flowers.jpg?height=600&width=800&text=Pastry Display",
-      alt: "Pastry display case",
-      category: "food",
-      height: 2,
-    },
-    {
       id: 8,
       src: "/customers.jpg?height=600&width=800&text=Customers Enjoying Coffee",
       alt: "Customers enjoying coffee",
       category: "people",
-      height: 2,
-    },
-    {
-      id: 9,
-      src: "/cafe-interior.jpg?height=600&width=800&text=Coffee Roasting",
-      alt: "Coffee roasting process",
-      category: "coffee",
       height: 2,
     },
     {
@@ -92,13 +64,7 @@ export default function GalleryPage() {
       category: "food",
       height: 2,
     },
-    {
-      id: 12,
-      src: "/cafe-night.jpg?height=600&width=800&text=Coffee Shop at Night",
-      alt: "Coffee shop at night",
-      category: "interior",
-      height: 3,
-    },
+
   ]
 
   const testimonials = [

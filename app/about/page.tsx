@@ -23,7 +23,7 @@ export default function AboutPage() {
               commitment to quality, sustainability, and the simple joy of a perfect coffee moment.
             </p> */}
             <p className="text-teal-800">
-              What sets Cups 'N Conversations apart is our dedication to both craft and community. We believe that great coffee
+              What sets Cups & Conversations apart is our dedication to both craft and community. We believe that great coffee
               brings people together, and our space has become a hub for connection, conversation, and creativity in
               Brewville.
             </p>
